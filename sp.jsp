@@ -87,10 +87,10 @@
       URLConnection urlConn = pickUrl.openConnection();
       HttpsURLConnection httpsURLConn = (HttpsURLConnection)urlConn;
       httpsURLConn.setSSLSocketFactory(socketFactory);
-      urlConn.setRequestProperty("ping.uname", "Administrator"); // !!!
-      urlConn.setRequestProperty("ping.pwd", "2Federate2");  // !!!
+      urlConn.setRequestProperty("ping.uname", "Administrator"); // !!! Plase modify.
+      urlConn.setRequestProperty("ping.pwd", "2Federate2");  // !!!  Plase modify.
       // ping.instanceId is optional and only needs to be specified if multiple instances of ReferenceId adapter are configured.
-      //urlConn.setRequestProperty("ping.instanceId", "spadapter");  // !!!
+      //urlConn.setRequestProperty("ping.instanceId", "spadapter");  // !!!  Please modify.
 
       // Get the response and parse it into another JSON object which are the
       //'user attributes'.
