@@ -67,7 +67,7 @@
       out.println("REF = " + referenceValue + "<BR><BR>");
 
       // Call back to PF to get the attributes associated with the reference
-      String pickupLocation = "https://localhost:9031/ext/ref/pickup?REF=" + referenceValue;
+      String pickupLocation = "https://<PF_HOST>:<PF_PORT>/ext/ref/pickup?REF=" + referenceValue;   // Please modify.
       System.out.println(pickupLocation);
       URL pickUrl = new URL(pickupLocation);
 
